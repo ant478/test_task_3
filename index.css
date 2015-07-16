@@ -31,8 +31,8 @@
     height: 100%;
     position: relative;
     min-height: 480px;
-    box-sizing: padding-box;
-    -moz-box-sizing: padding-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
     padding-top: 50px;
   }
 
