@@ -1,0 +1,340 @@
+/* general */
+  html, body {
+    font-family: Arial;
+    font-size: 0;
+    height: 100%;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  img {
+    border: none; }
+
+  h1, h2, h3, h4 {
+    display: block;
+    margin: 0;
+    font-weight: normal; }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+
+  #page-container {
+    height: 100%;
+    position: relative;
+  }
+
+  .page {
+    height: 100%;
+    position: relative;
+    min-height: 480px;
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    padding-top: 50px;
+  }
+
+  /* fonts */ 
+    @font-face {
+        font-family: 'American Retro';
+        src: url('assets/American Retro/american-retro-webfont.eot');
+        src: url('assets/American Retro/american-retro-webfont.eot?#iefix') format('embedded-opentype'),
+             url('assets/American Retro/american-retro-webfont.woff2') format('woff2'),
+             url('assets/American Retro/american-retro-webfont.woff') format('woff'),
+             url('assets/American Retro/american-retro-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Yaquotescript';
+        src: url('assets/Yaquotescript/yaquotescript_personaluse-webfont.eot');
+        src: url('assets/Yaquotescript/yaquotescript_personaluse-webfont.eot?#iefix') format('embedded-opentype'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.woff2') format('woff2'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.woff') format('woff'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* header */
+
+  #page-header {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.85);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #page-header .top-menu {
+      display: inline-block;
+      float: right;
+      height: 100%;
+      margin-right: 30px;
+  }
+
+  #page-header .top-menu .top-menu-element {
+      display: inline-block;
+      margin-right: 15px;
+  }
+
+  #page-header .top-menu .top-menu-element .top-menu-link {
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 14px;
+      height: 100%;
+      line-height: 50px;
+      transition: all 0.3s ease 0s;
+  }
+
+  #page-header .top-menu .top-menu-element .top-menu-link:hover {
+  	color: #99E2D3;
+  }
+
+  #page-header .top-menu .top-menu-element.active .top-menu-link {
+  	color: #99E2D3;
+  	cursor: default;
+  }
+
+/* page content */
+
+  #page-content {
+    height: 100%;
+    position: relative;
+  }
+
+  /* logo block */
+
+    .logo-block {
+      background: url("assets/back1.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+      text-align: center;
+    }
+
+    .logo-block .logo-content {
+      bottom: 50px;
+      height: 300px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 600px;
+    }
+
+    .logo-block h2 {
+      text-shadow: 2px 2px 2px #000000;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    .logo-block .title-text-1 {    
+      font-family: 'American Retro';
+      font-size: 100px;       
+    }
+
+    .logo-block .title-text-2 {    
+      font-family: 'Yaquotescript';
+      font-size: 156px;    
+      margin-left: 28px;
+    }
+
+    .logo-block .slogan-text {
+      color: #FFFFFF;
+      display: block;
+      font-size: 22px;
+      margin-top: 10px;
+      text-shadow: 4px 4px 4px #000000;
+    }
+
+    .logo-block .order-button {
+      background-color: #B38151;
+      border-radius: 8px;
+      color: #45322E;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+      margin-top: 35px;
+      padding: 0 20px;
+      text-shadow: 1px 1px 1px #CD9435;
+    }
+
+  /* swiper 1 */
+
+    .swiper1 {
+      background: #1C1C1C url("assets/back3.jpg");
+      text-align: center;
+    }
+
+    .swiper1 .swiper-header {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 28px;
+      height: 28px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    .swiper1 .swiper-container {
+      height: calc(100% - 38px);
+      position: relative;
+    }
+
+    .swiper1 .slide-content {
+      bottom: 0;
+      display: inline-block;
+      height: 420px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 600px;
+    }
+
+    .swiper1 .slide-image {
+      height: 300px;
+      width: auto;
+      max-width: 600px;
+    }
+
+    .swiper1 .slide-description {
+      color: #E2E2E2;
+      font-size: 16px;
+      width: 600px;
+    }
+
+    .swiper1 .slide-description b.kapuchino { color: rgb(125, 53, 14); }
+    .swiper1 .slide-description b.latte { color: rgb(185, 70, 22); }
+    .swiper1 .slide-description b.espresso { color: rgb(0, 0, 3); }
+    .swiper1 .slide-description b.americano { color: rgb(0, 0, 3); }
+
+  /* middle text */
+
+    .middle-text {
+      background: url("assets/back2.jpg") no-repeat scroll 0 0/100% rgba(0, 0, 0, 0)
+    }
+
+    .middle-text p {
+      color: #F5F5F5;
+      font-size: 17px;
+      letter-spacing: 0.6px;
+      line-height: 27px;
+      margin: 0 10%;
+      position: relative;
+      text-align: justify;
+      text-shadow: 2px 2px 2px #111111;
+      top: 50%;
+      width: 80%;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+  /* swiper 2 */
+
+    .swiper2 {
+      background: #1C1C1C url("assets/back3.jpg");
+      text-align: center;
+    }
+
+    .swiper2 .swiper-header {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 28px;
+      height: 28px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    .swiper2 .swiper-container {
+      height: calc(100% - 38px);
+      position: relative;
+    }
+
+    .swiper2 .slide-content {
+      bottom: 0;
+      display: inline-block;
+      height: 420px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 600px;
+    }
+
+    .swiper2 .slide-image {
+      height: 300px;
+      width: auto;
+      max-width: 600px;
+    }
+
+    .swiper2 .slide-description {
+      color: #E2E2E2;
+      font-size: 16px;
+      width: 600px;
+    }
+
+    .swiper2 .slide-description b.kruasan { color: rgb(219, 154, 0); }
+    .swiper2 .slide-description b.chocolate { color: rgb(69, 50, 46); }
+    .swiper2 .slide-description b.ice-cream { color: rgb(255, 255, 255); }
+    .swiper2 .slide-description b.chocolate-cake { color: rgb(69, 50, 46); }
+
+  
+
+/* footer */
+
+  #page-footer {
+    background: none repeat scroll 0 0 #401414;
+    bottom: 0;
+    height: 136px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  #page-footer .footer-text-1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  #page-footer .footer-buttons {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  #page-footer .footer-buttons .app-store-button,
+  #page-footer .footer-buttons .google-play-button {    
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    margin: 0 7px;
+    width: 132px;
+  }
+
+  #page-footer .footer-buttons .app-store-button {
+    background: url("assets/appstore-button.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  }
+
+  #page-footer .footer-buttons .google-play-button {
+    background: url("assets/get-it-on-google-play.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  }
+
+  #page-footer .terms-link {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: none;
+  }
