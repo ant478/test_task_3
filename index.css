@@ -325,7 +325,7 @@
   /* footer */
 
     #page-footer {
-      background: none repeat scroll 0 0 #401414;
+      background: url("assets/back4.jpg") repeat scroll 0 0 #401414;
       bottom: 0;
       height: 120px;
       position: absolute;
