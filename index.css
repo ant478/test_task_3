@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     position: relative;
+    min-width: 640px;
+    min-height: 480px;
   }
 
   img {
@@ -109,7 +111,7 @@
   /* logo block */
 
     .logo-block {
-      background: url("assets/back1.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+      background: url("assets/back1.jpg") no-repeat scroll center 0 / cover  rgba(0, 0, 0, 0);
       text-align: center;
     }
 
@@ -162,6 +164,13 @@
       margin-top: 35px;
       padding: 0 20px;
       text-shadow: 1px 1px 1px #CD9435;
+      transition: all 1s ease 0s;
+    }
+
+    .logo-block .order-button:hover {
+      background-color: #895727;
+      color: #311E1A;
+      text-shadow: 1px 1px 1px #C99042;
     }
 
   /* swiper */
@@ -199,7 +208,7 @@
     }
 
     .swiper .slide-image {
-      height: 300px;
+      height: 285px;
       width: auto;
       max-width: 600px;
     }
@@ -222,7 +231,7 @@
   /* middle text */
 
     .middle-text {
-      background: url("assets/back2.jpg") no-repeat scroll 0 0/100% rgba(0, 0, 0, 0)
+      background: url("assets/back2.jpg") no-repeat scroll center 0 / cover rgba(0, 0, 0, 0)
     }
 
     .middle-text p {
@@ -305,10 +314,10 @@
     .contacts .submit-button {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
-      background-color: #B38151;
+      background-color: #9E6C3C;
       border: medium none;
       border-radius: 8px;
-      color: #45322E;
+      color: #3E2B27;
       cursor: pointer;
       display: block;
       font-size: 20px;
@@ -318,9 +327,15 @@
       margin: 0 auto;
       outline: medium none;
       padding: 0 20px;
-      text-shadow: none;
+      text-shadow: 1px 1px 1px #CD9435;
+      transition: all 1s ease 0s;
     }
 
+    .contacts .submit-button:hover {
+      background-color: #895727;
+      color: #311E1A;
+      text-shadow: 1px 1px 1px #C99042;
+    }
 
   /* footer */
 
@@ -372,3 +387,6 @@
     #page-footer .terms-link:hover {
       text-decoration: underline;
     }
+
+  /* responsive */
+
