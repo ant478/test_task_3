@@ -164,28 +164,28 @@
       text-shadow: 1px 1px 1px #CD9435;
     }
 
-  /* swiper 1 */
+  /* swiper */
 
-    .swiper1 {
+    .swiper {
       background: #1C1C1C url("assets/back3.jpg");
       text-align: center;
     }
 
-    .swiper1 .swiper-header {
+    .swiper .swiper-header {
       color: #FFFFFF;
       display: inline-block;
-      font-size: 28px;
-      height: 28px;
+      font-size: 26px;
+      height: 26px;
       margin-bottom: 5px;
       margin-top: 5px;
     }
 
-    .swiper1 .swiper-container {
+    .swiper .swiper-container {
       height: calc(100% - 38px);
       position: relative;
     }
 
-    .swiper1 .slide-content {
+    .swiper .slide-content {
       bottom: 0;
       display: inline-block;
       height: 420px;
@@ -198,22 +198,26 @@
       width: 600px;
     }
 
-    .swiper1 .slide-image {
+    .swiper .slide-image {
       height: 300px;
       width: auto;
       max-width: 600px;
     }
 
-    .swiper1 .slide-description {
+    .swiper .slide-description {
       color: #E2E2E2;
       font-size: 16px;
       width: 600px;
     }
 
-    .swiper1 .slide-description b.kapuchino { color: rgb(125, 53, 14); }
-    .swiper1 .slide-description b.latte { color: rgb(185, 70, 22); }
-    .swiper1 .slide-description b.espresso { color: rgb(0, 0, 3); }
-    .swiper1 .slide-description b.americano { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.kapuchino { color: rgb(125, 53, 14); }
+    .swiper .slide-description b.latte { color: rgb(185, 70, 22); }
+    .swiper .slide-description b.espresso { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.americano { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.kruasan { color: rgb(219, 154, 0); }
+    .swiper .slide-description b.chocolate { color: rgb(69, 50, 46); }
+    .swiper .slide-description b.ice-cream { color: rgb(255, 255, 255); }
+    .swiper .slide-description b.chocolate-cake { color: rgb(69, 50, 46); }
 
   /* middle text */
 
@@ -239,102 +243,132 @@
       transform: translateY(-50%);
     }
 
-  /* swiper 2 */
+  /* contacts */
 
-    .swiper2 {
+    .contacts {
       background: #1C1C1C url("assets/back3.jpg");
-      text-align: center;
+      text-align: center; 
     }
-
-    .swiper2 .swiper-header {
+  
+    .contacts .contact-form-header {
       color: #FFFFFF;
       display: inline-block;
-      font-size: 28px;
-      height: 28px;
-      margin-bottom: 5px;
+      font-size: 26px;
+      height: 26px;
+      margin-bottom: 10px;
       margin-top: 5px;
     }
 
-    .swiper2 .swiper-container {
-      height: calc(100% - 38px);
-      position: relative;
-    }
-
-    .swiper2 .slide-content {
-      bottom: 0;
-      display: inline-block;
-      height: 420px;
+    .contacts .order-form {
+      bottom: 25px;
+      display: block;
+      height: 234px;
       left: 0;
       margin: auto;
       position: absolute;
       right: 0;
-      text-align: center;
       top: 0;
-      width: 600px;
     }
 
-    .swiper2 .slide-image {
-      height: 300px;
-      width: auto;
-      max-width: 600px;
-    }
-
-    .swiper2 .slide-description {
-      color: #E2E2E2;
+    .contacts .name-field,
+    .contacts .phone-field,
+    .contacts .adress-field {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #DDDDDD;
+      border-radius: 5px;
+      color: #FFFFFF;
+      display: block;
+      margin: auto;
+      margin-bottom: 22px;
+      outline: medium none;
+      padding: 6px 10px;
+      width: 330px;
       font-size: 16px;
-      width: 600px;
+      font-family: Arial;
     }
 
-    .swiper2 .slide-description b.kruasan { color: rgb(219, 154, 0); }
-    .swiper2 .slide-description b.chocolate { color: rgb(69, 50, 46); }
-    .swiper2 .slide-description b.ice-cream { color: rgb(255, 255, 255); }
-    .swiper2 .slide-description b.chocolate-cake { color: rgb(69, 50, 46); }
+    .contacts .name-field {
+      height: 33px;
+    }
 
-  
+    .contacts .phone-field {
+      height: 33px;
+    }
 
-/* footer */
+    .contacts .adress-field {
+      height: 70px;
+      resize: none;
+    }
 
-  #page-footer {
-    background: none repeat scroll 0 0 #401414;
-    bottom: 0;
-    height: 136px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-  }
+    .contacts .submit-button {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: #B38151;
+      border: medium none;
+      border-radius: 8px;
+      color: #45322E;
+      cursor: pointer;
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 auto;
+      outline: medium none;
+      padding: 0 20px;
+      text-shadow: none;
+    }
 
-  #page-footer .footer-text-1 {
-    color: #FFFFFF;
-    font-size: 16px;
-    margin-top: 15px;
-  }
 
-  #page-footer .footer-buttons {
-    display: inline-block;
-    margin-top: 15px;
-  }
+  /* footer */
 
-  #page-footer .footer-buttons .app-store-button,
-  #page-footer .footer-buttons .google-play-button {    
-    cursor: pointer;
-    display: inline-block;
-    height: 42px;
-    margin: 0 7px;
-    width: 132px;
-  }
+    #page-footer {
+      background: none repeat scroll 0 0 #401414;
+      bottom: 0;
+      height: 120px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
 
-  #page-footer .footer-buttons .app-store-button {
-    background: url("assets/appstore-button.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  }
+    #page-footer .footer-text-1 {
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-top: 15px;
+    }
 
-  #page-footer .footer-buttons .google-play-button {
-    background: url("assets/get-it-on-google-play.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  }
+    #page-footer .footer-buttons {
+      display: inline-block;
+      margin-top: 15px;
+    }
 
-  #page-footer .terms-link {
-    color: #999999;
-    display: block;
-    font-size: 12px;
-    margin-top: 5px;
-    text-decoration: none;
-  }
+    #page-footer .footer-buttons .app-store-button,
+    #page-footer .footer-buttons .google-play-button {    
+      cursor: pointer;
+      display: inline-block;
+      height: 42px;
+      margin: 0 7px;
+      width: 132px;
+    }
+
+    #page-footer .footer-buttons .app-store-button {
+      background: url("assets/appstore-button.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    }
+
+    #page-footer .footer-buttons .google-play-button {
+      background: url("assets/get-it-on-google-play.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    }
+
+    #page-footer .terms-link {
+      color: #999999;
+      display: block;
+      font-size: 12px;
+      margin-top: 5px;
+      text-decoration: none;
+    }
+
+    #page-footer .terms-link:hover {
+      text-decoration: underline;
+    }
