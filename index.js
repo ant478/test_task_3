@@ -1,5 +1,5 @@
-  $(document).ready(function () {
 
+  $(document).ready(function () {
     var swiper1 = new Swiper('.swiper1 .swiper-container', {
       nextButton: '.swiper1 .swiper-button-next',
       prevButton: '.swiper1 .swiper-button-prev',
