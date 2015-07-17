@@ -18,16 +18,16 @@
 
     <header id="page-header">
       <nav class = "top-menu">
-        <div class = "top-menu-element active"><a class = "top-menu-link">Intro</a></div>
-        <div class = "top-menu-element"><a class = "top-menu-link">Drinks</a></div>
-        <div class = "top-menu-element"><a class = "top-menu-link">About</a></div>
-        <div class = "top-menu-element"><a class = "top-menu-link">Food</a></div>
-        <div class = "top-menu-element"><a class = "top-menu-link">Order</a></div>
+        <div class = "top-menu-element active" data-page-number = "1"><a class = "top-menu-link">Intro</a></div>
+        <div class = "top-menu-element" data-page-number = "2"><a class = "top-menu-link">Drinks</a></div>
+        <div class = "top-menu-element" data-page-number = "3"><a class = "top-menu-link">About</a></div>
+        <div class = "top-menu-element" data-page-number = "4"><a class = "top-menu-link">Food</a></div>
+        <div class = "top-menu-element" data-page-number = "5"><a class = "top-menu-link">Order</a></div>
       </nav>
     </header>
 
     <main id="page-content">
-      <section class = "logo-block page fullScreenPage" id="page1">
+      <section class = "logo-block page" data-page-number = "1">
         <div class = "logo-content">
           <h2><span class = "title-text-1">Drain a</span><span class = "title-text-2">cup</span></h2>
           <span class = "slogan-text">Good coffee is like friendship: rich, and warm and strong</span>
@@ -35,7 +35,7 @@
         </div>
       </section>
 
-      <section class = "swiper swiper1 page fullScreenPage" id="page1">
+      <section class = "swiper swiper1 page" data-page-number = "2">
         <h2 class = "swiper-header">Choose a drink</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -80,13 +80,13 @@
         </div>
       </section>
 
-      <section class = "middle-text page fullScreenPage" id="page1">
+      <section class = "middle-text page" data-page-number = "3">
         <p>
           Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of "berries" from the Coffea plant. Coffee plants are cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. The latter is resistant to the coffee leaf rust, Hemileia vastatrix, but has a more bitter taste. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the beans are roasted to varying degrees, depending on the desired flavor, before being ground and brewed to create coffee.
         </p>
       </section>
 
-      <section class = "swiper swiper2 page fullScreenPage" id="page1">
+      <section class = "swiper swiper2 page" data-page-number = "4">
         <h2 class = "swiper-header">Choose a sweet stuff</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -131,7 +131,7 @@
         </div>
       </section>
 
-      <section class = "contacts page" id="page1 fullScreenPage">
+      <section class = "contacts page" data-page-number = "5">
         <h2 class = "contact-form-header">Enter your contact data</h2>
         <form class = "order-form">
           <input type = "text" class = "name-field" placeholder = "Enter your name">
