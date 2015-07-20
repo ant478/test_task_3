@@ -455,7 +455,7 @@
         }
 
         .swiper .slide-description b {
-          color: #fff;
+          color: #fff !important;
         }
 
       /* middle text */ 
