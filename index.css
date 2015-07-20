@@ -37,6 +37,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding-top: 50px;
+    bottom: 0;
   }
 
   /* fonts */ 
@@ -124,7 +125,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      width: 600px;
+      width: 100%;
     }
 
     .logo-block h2 {
@@ -393,3 +394,54 @@
 
   /* responsive */
 
+    @media (max-width: 640px) {
+      /* general */
+
+      html, body {
+        min-width: 320px;
+        overflow: visible;
+      }
+
+      .page {
+        min-width: 320px;
+      }
+
+      /* logo block */
+        .logo-block .logo-content {
+          height: 250px;
+          bottom: 0;
+        }
+
+        .logo-block .title-text-1 {
+          font-size: 60px;
+        }
+
+        .logo-block .title-text-2 {
+          font-size: 80px;
+          margin-left: 20px;
+        }
+
+        .logo-block .slogan-text {
+          
+        }
+
+        .logo-block .order-button {
+          font-size: 17px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+        }
+
+      /* contacts */
+        .contacts .contact-form-header {
+          font-size: 22px;
+          height: 22px;
+        }
+
+        .contacts .name-field,
+        .contacts .phone-field,
+        .contacts .adress-field {
+          width: 80%;
+        }
+
+    }
