@@ -1,12 +1,12 @@
-    // left: 37, up: 38, right: 39, down: 40,
-    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
     var curentPageIndex = 1;
 
     function scrollToPage(pageNumber) {
-      $('html, body').animate({'scrollTop': $(".page[data-page-number = "+ pageNumber +"]").offset().top}, 500);
+      var speed = Math.abs(curentPageIndex - pageNumber) * 500;
+      $('.page').stop();
+      $('.page').animate({'bottom': $(".page[data-page-number = "+ pageNumber +"]").offset().top + parseInt($('.page').css('bottom')) }, speed);
       $('.top-menu-element.active').removeClass('active');
       $('.top-menu-element[data-page-number = '+ pageNumber +']').addClass('active');
+      curentPageIndex = parseInt(pageNumber);
     }
 
     function scrollPage(event) {
@@ -14,9 +14,9 @@
       event.returnValue = false;
       var delta = event.deltaY || event.detail || event.wheelDelta;
       if ((delta > 0) && ($(".page[data-page-number = "+ (curentPageIndex + 1) +"]").length != 0)) {
-        scrollToPage(++curentPageIndex); }
+        scrollToPage(curentPageIndex + 1); }
       if ((delta < 0) && ($(".page[data-page-number = "+ (curentPageIndex - 1) +"]").length != 0)) {
-        scrollToPage(--curentPageIndex); }
+        scrollToPage(curentPageIndex - 1); }
     }
 
     function setEventListener(func) {

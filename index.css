@@ -9,6 +9,7 @@
     position: relative;
     min-width: 640px;
     min-height: 480px;
+    overflow: hidden;
   }
 
   img {
@@ -164,6 +165,7 @@
       margin-top: 35px;
       padding: 0 20px;
       text-shadow: 1px 1px 1px #CD9435;
+      box-shadow: 1px 2px 10px #040404;
       transition: all 1s ease 0s;
     }
 
@@ -328,6 +330,7 @@
       outline: medium none;
       padding: 0 20px;
       text-shadow: 1px 1px 1px #CD9435;
+      box-shadow: 1px 2px 10px #040404;
       transition: all 1s ease 0s;
     }
 
