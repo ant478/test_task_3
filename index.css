@@ -224,12 +224,12 @@
 
     .swiper .slide-description b.kapuchino { color: rgb(125, 53, 14); }
     .swiper .slide-description b.latte { color: rgb(185, 70, 22); }
-    .swiper .slide-description b.espresso { color: rgb(0, 0, 3); }
-    .swiper .slide-description b.americano { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.espresso { color: #373333; }
+    .swiper .slide-description b.americano { color: #373333; }
     .swiper .slide-description b.kruasan { color: rgb(219, 154, 0); }
-    .swiper .slide-description b.chocolate { color: rgb(69, 50, 46); }
+    .swiper .slide-description b.chocolate { color: #5B3831; }
     .swiper .slide-description b.ice-cream { color: rgb(255, 255, 255); }
-    .swiper .slide-description b.chocolate-cake { color: rgb(69, 50, 46); }
+    .swiper .slide-description b.chocolate-cake { color: #5B3831; }
 
   /* middle text */
 
