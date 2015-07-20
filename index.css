@@ -397,10 +397,10 @@
     @media (max-width: 640px) {
       /* general */
 
-      html, body {
-        min-width: 320px;
-        overflow: visible;
-      }
+        html, body {
+          min-width: 320px;
+          overflow: visible;
+        }
 
       .page {
         min-width: 320px;
@@ -413,23 +413,52 @@
         }
 
         .logo-block .title-text-1 {
-          font-size: 60px;
+          font-size: 55px;
         }
 
         .logo-block .title-text-2 {
-          font-size: 80px;
-          margin-left: 20px;
+          font-size: 75px;
+          margin-left: 18px;
         }
 
         .logo-block .slogan-text {
-          
+          font-size: 16px;
+          padding: 0 9%;
         }
 
         .logo-block .order-button {
-          font-size: 17px;
+          font-size: 18px;
           height: 30px;
           line-height: 30px;
           padding: 0 10px;
+        }
+
+      /* swiper */
+        .swiper .swiper-header {
+          font-size: 22px;
+          height: 22px;
+        }
+
+        .swiper .slide-content {
+          width: 80%;
+          height: 360px;
+        }
+
+        .swiper .slide-image {
+          height: 200px;
+        }
+
+        .swiper .slide-description {
+          font-size: 14px;
+          padding: 0 5%;
+          width: 90%;
+        }
+
+      /* middle text */ 
+        .middle-text p {
+          font-size: 14px;
+          letter-spacing: 0.3px;
+          line-height: 20px;
         }
 
       /* contacts */
@@ -442,6 +471,18 @@
         .contacts .phone-field,
         .contacts .adress-field {
           width: 80%;
+          font-size: 14px;
+        }
+
+        .contacts .submit-button {
+          font-size: 18px;
+          height: 25px;
+          line-height: 23px;
+        }
+
+      /* footer */ 
+        #page-footer .footer-text-1 {
+          font-size: 14px;
         }
 
     }
