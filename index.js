@@ -1,9 +1,11 @@
     var curentPageIndex = 1;
 
     function scrollToPage(pageNumber) {
-      var speed = Math.abs(curentPageIndex - pageNumber) * 500;
       $('.page').stop();
-      $('.page').animate({'bottom': $(".page[data-page-number = "+ pageNumber +"]").offset().top + parseInt($('.page').css('bottom')) }, speed);
+      var targetBottom = $(".page[data-page-number = "+ pageNumber +"]").offset().top + parseInt($('.page').css('bottom'));
+      var currentBottom = parseInt($('.page').css('bottom'));
+      var speed = (Math.abs(targetBottom - currentBottom) / $('.page').height()) * 500;
+      $('.page').animate({'bottom': targetBottom }, speed);
       $('.top-menu-element.active').removeClass('active');
       $('.top-menu-element[data-page-number = '+ pageNumber +']').addClass('active');
       curentPageIndex = parseInt(pageNumber);
